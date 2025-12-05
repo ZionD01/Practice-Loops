@@ -5,13 +5,6 @@ let str = 'ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Bl
 
 // Loop through the characters of a given CSV string.
 
-for (let i = 0; i <= str.length; i++) {
-
-    console.log(i);
-
-}
-
-
 // Store each “cell” of data in a variable.
 
 let cell1 = '';
@@ -32,8 +25,30 @@ let cell15 = '';
 let cell16 = '';
 let cell17 = '';
 let cell18 = '';
-let cell19 = "";
+let cell19 = '';
 let cell20 = '';
+
+
+let cellNumber = 1
+
+for (let i = 0; i <= str.length; i++) {
+
+    let char = str[i];
+
+    console.log(str[i]);
+
+    if (char == ",") {
+
+        cellNumber++;
+
+        console.log(cellNumber);
+
+        break;
+    }
+
+    console.log(i);
+
+}
 
 
 // When you encounter a comma, move to the next cell.
